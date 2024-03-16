@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <script defer src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="city-request">
+            <div id="logo">
+                <img id="logo-pic" src="./images/weather.png" alt="sky">
+                <span id="logo-title">Web Weather</span>
+            </div>
+            <form id="city-input">
+                <input type="text" id="city" name="city" placeholder="Seattle"/>
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <div id="current-info">
+            <span id="location"></span>
+            <div id="temp-info">
+                <span id="current-temp"></span>
+                <span id="temp-unit"></span>
+                <button type="button" id="unit-btn">F/C</button>    
+            </div>
+            <img id="cond-icon" src="" alt="current conditions"/>
+            <span id="cond-text"></span>
+        </div>
+        <div id="forecasts">
+        </div>
+
+    </div>
+</body>
+</html>
